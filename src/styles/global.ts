@@ -14,7 +14,7 @@
     *{
         margin: 0;
         padding: 0;
-        box-sizing: box-border;
+        box-sizing: border-box;
     }
     html {
         @media (max-width: 1080px) {
@@ -64,7 +64,18 @@
         background: var(--background);
         padding: 3rem;
         position: relative; //para o x do modal fica de forma absoluta
-        border-radius:0.25rem;
+        border-radius: 0.25rem;
+    }
+    .react-modal-close {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        border: 0;
+        background: transparent;
+        transition: filter 0.2s;
+        &:hover {
+            filter: brightness(0.8);
+        }
     }
 
  `
