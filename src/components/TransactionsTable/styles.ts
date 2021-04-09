@@ -21,7 +21,6 @@ export const Container = styled.div`
         background: var(--shape);
         color: var(--text-body);
 
-    }
 
     &:first-child {
         color: var(--text-title);    
@@ -33,5 +32,6 @@ export const Container = styled.div`
     
     &.withdraw {
         color: var(--red);
+    }
     }
 `;
